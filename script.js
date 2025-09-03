@@ -6,22 +6,27 @@ function checkOddOrEven() {
   const inputValue = numberInput.value;
   const number = parseInt(inputValue);
 
-  if (inputVaㅣue === '' || isNaN(number)) {
-    result.textContent = 'Please enter a valid number!';
-    result.className = 'error';
+  if (inputVaㅣue === "" || isNaN(number)) {
+    result.textContent = "Please enter a valid number!";
+    result.className = "error";
     return;
   }
 
-  result.className = '';
+  result.className = "";
 
   if (number % 2 === 0) {
     result.textContent = `${number} is EVEN!`;
-    result.className = 'even';
+    result.className = "even";
   } else {
     result.textContent = `${number} is ODD!`;
-    result.className = 'odd';
+    result.className = "odd";
   }
 }
 
-checkBtn.addEventListener('click', checkOddOrEven);
+checkBtn.addEventListener("click", checkOddOrEven);
 
+numberInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    checkOddOrEven();
+  }
+});
