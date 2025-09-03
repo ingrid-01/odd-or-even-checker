@@ -22,3 +22,6 @@ function checkOddOrEven() {
     result.className = 'odd';
   }
 }
+
+checkBtn.addEventListener('click', checkOddOrEven);
+
