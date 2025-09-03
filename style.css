@@ -39,7 +39,7 @@ h1 {
 }
 
 #checkBtn {
-  pad: 15px 30px;
+  padding: 15px 30px;
   font-size: 1.2rem;
   background-color: #4CAF50;
   color: white;
