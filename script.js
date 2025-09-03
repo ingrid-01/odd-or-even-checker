@@ -6,7 +6,7 @@ function checkOddOrEven() {
   const inputValue = numberInput.value;
   const number = parseInt(inputValue);
 
-  if (inputVaㅣue === "" || isNaN(number)) {
+  if (inputValue === "" || isNaN(number)) {
     result.textContent = "Please enter a valid number!";
     result.className = "error";
     return;
